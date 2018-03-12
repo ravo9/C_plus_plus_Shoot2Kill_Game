@@ -5,13 +5,14 @@
 class Character {
 
 	protected:
+		// It will be changed for our image (spritesheet).
 		std::unique_ptr<sf::Shape> _shape;
 		sf::Vector2f _position;
 		Character(std::unique_ptr<sf::Shape> shp);
 		
 	public:
 		Character() = delete;
-		std::unique_ptr<sf::Shape> _shape;
+		// Destructor.
 		virtual ~Character() = default;
 		virtual void update(const double dt);
 		virtual void render(sf::RenderWindow &window) const = 0;

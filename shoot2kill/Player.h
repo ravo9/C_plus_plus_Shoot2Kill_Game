@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-class Entity {
+/*class Entity {
 
 	protected:
 		//std::unique_ptr<sf::Shape> _shape;
@@ -25,4 +25,4 @@ struct EntityManager {
 	std::vector<Entity*> list;
 	void update(double dt);
 	void render(sf::RenderWindow &window);
-};
+};*/

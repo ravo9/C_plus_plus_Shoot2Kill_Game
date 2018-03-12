@@ -1,29 +1,28 @@
-#include "Entity.h"
-#include "system_renderer.h"
+#include <iostream>
+#include <SFML/Graphics.hpp>
+#include "Enemy.h"
+#include "Character.h"
 
 using namespace sf;
 using namespace std;
 
-const Vector2f Entity::getPosition() { return _position; }
+void Enemy::update(double dt) {
 
-void Entity::setPosition(const Vector2f &pos) { _position = pos; }
+	if (this->getPosition().x > 500 || this->getPosition().x < 100)
+		directionX *= -1;
 
-void Entity::move(const Vector2f &pos) { _position += pos; }
-
-void Entity::update(const double dt) {
-	_shape->setPosition(_position);
+	move({ directionX * _speed * float(dt), directionY * _speed * float(dt) });
+	//Character::update(dt);
 }
 
-void EntityManager::update(const double dt) {
+Enemy::Enemy() : _speed(2.0f), Character(make_unique<CircleShape>(25.f)) {
+	_shape->setFillColor(Color::Red);
 
-	for (int i = 0; i < list.size(); i++)
-		list[i]->update(dt);
+	_shape->setOrigin(Vector2f(-400.f, -300.f));
+
+	directionX = (float)(1);
 }
 
-void EntityManager::render(sf::RenderWindow &window) {
-	for (int i = 0; i < list.size(); i++)
-		list[i]->render(window);
+void Enemy::render(sf::RenderWindow &window) const {
+	window.draw(*_shape);
 }
-
-// It's not a constructor. There is a parameter set after the colon.
-Entity::Entity(unique_ptr<Shape> s) : _shape(std::move(s)) {}
