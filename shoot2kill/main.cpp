@@ -10,7 +10,6 @@ Enemy* e1;
 
 void  Load() {
 	e1 = new Enemy();
-	e1->setPosition(Vector2f(300.f, 300.f));
 }
 
 void  Update(RenderWindow &window) {
