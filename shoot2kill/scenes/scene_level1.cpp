@@ -5,11 +5,13 @@
 #include <LevelSystem.h>
 #include <iostream>
 #include <thread>
+#include <SFML/Graphics.hpp>
 
 using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
+static Texture spritesheet;
 
 void Level1Scene::Load() {
   cout << " Scene 1 Load" << endl;
@@ -20,14 +22,27 @@ void Level1Scene::Load() {
 
   // Create player
   {
-    player = makeEntity();
-    player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
-    auto s = player->addComponent<ShapeComponent>();
-    s->setShape<sf::RectangleShape>(Vector2f(20.f, 30.f));
-    s->getShape().setFillColor(Color::Magenta);
-    s->getShape().setOrigin(10.f, 15.f);
+	  player = makeEntity();
+	  player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
+	  /*auto s = player->addComponent<ShapeComponent>();
+	  s->setShape<sf::RectangleShape>(Vector2f(20.f, 30.f));
+	  s->getShape().setFillColor(Color::Magenta);
+	  s->getShape().setOrigin(10.f, 15.f);*/
 
-    player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
+	  //////
+	 
+	  if (!spritesheet.loadFromFile("res/img/character_template_01.png"))
+		  cerr << "Failed to load spritesheet!" << endl;
+	  else
+		  cout << "Texture loaded!";
+	  auto s1 = player->addComponent<SpriteComponent>();
+	  s1->getSprite().setTexture(spritesheet);
+	  s1->getSprite().setTextureRect(IntRect(0, 0, 80, 160));
+	  s1->getSprite().setOrigin(40.f, 80.f);
+	 
+	  player->addComponent<PlayerPhysicsComponent>(Vector2f(80.f, 160.f));
+	  //////
+	  //player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
   }
 
   // Add physics colliders to level tiles.
@@ -43,7 +58,7 @@ void Level1Scene::Load() {
   }
 
   //Simulate long loading times
-  std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+  //std::this_thread::sleep_for(std::chrono::milliseconds(3000));
   cout << " Scene 1 Load Done" << endl;
 
   setLoaded(true);

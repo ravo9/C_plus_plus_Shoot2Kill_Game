@@ -9,6 +9,7 @@ using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
+static Texture spritesheet;
 
 void Level3Scene::Load() {
   cout << "Scene 3 Load" << endl;
@@ -20,13 +21,19 @@ void Level3Scene::Load() {
   {
     // *********************************
 
+	  player = makeEntity();
+	  player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
+	  if (!spritesheet.loadFromFile("res/img/invaders_sheet.png"))
+		  cerr << "Failed to load spritesheet!" << endl;
+	  else
+		  cout << "Texture loaded!";
+	  auto s1 = player->addComponent<SpriteComponent>();
+	  s1->getSprite().setTexture(spritesheet);
+	  s1->getSprite().setTextureRect(IntRect(160, 32, 32, 32));
+	  s1->getSprite().setOrigin(16.f, 16.f);
 
-    // pl->setPosition({100, 100});
-
-
-
-
-
+	  player->addComponent<PlayerPhysicsComponent>(Vector2f(32.f, 32.f));
+      player->setPosition({100, 100});
 
     // *********************************
   }
@@ -35,12 +42,14 @@ void Level3Scene::Load() {
   {
     // *********************************
 
-
-
-
-
-
-
+	  auto walls = ls::findTiles(ls::WALL);
+	  for (auto w : walls) {
+		  auto pos = ls::getTilePosition(w);
+		  pos += Vector2f(20.f, 20.f); //offset to center
+		  auto e = makeEntity();
+		  e->setPosition(pos);
+		  e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
+	  }
 
     // *********************************
   }
