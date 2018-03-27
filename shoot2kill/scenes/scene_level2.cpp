@@ -11,6 +11,8 @@ using namespace std;
 using namespace sf;
 
 static shared_ptr<Entity> player;
+static Texture spritesheet;
+
 void Level2Scene::Load() {
   cout << "Scene 2 Load" << endl;
   ls::loadLevelFile("res/level_2.txt", 40.0f);
@@ -21,14 +23,23 @@ void Level2Scene::Load() {
   {
     // *********************************
 
+	  player = makeEntity();
+	  player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
+	  if (!spritesheet.loadFromFile("res/img/invaders_sheet.png"))
+		  cerr << "Failed to load spritesheet!" << endl;
+	  else
+		  cout << "Texture loaded!";
+	  auto s1 = player->addComponent<SpriteComponent>();
+	  s1->getSprite().setTexture(spritesheet);
+	  s1->getSprite().setTextureRect(IntRect(160, 32, 32, 32));
+	  s1->getSprite().setOrigin(16.f, 16.f);
 
-
-
-
+	  player->addComponent<PlayerPhysicsComponent>(Vector2f(32.f, 32.f));
 
     // *********************************
+
     player->addTag("player");
-    player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
+    //player->addComponent<PlayerPhysicsComponent>(Vector2f(20.f, 30.f));
   }
 
   // Create Enemy
@@ -36,15 +47,19 @@ void Level2Scene::Load() {
     auto enemy = makeEntity();
     enemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]) +
                        Vector2f(0, 24));
+
     // *********************************
+
     // Add HurtComponent
+	auto h = enemy->addComponent<HurtComponent>();
 
     // Add ShapeComponent, Red 16.f Circle
-
-
-
+	auto sh = enemy->addComponent<ShapeComponent>();
+	sh->setShape<sf::CircleShape>(16.f);
+	sh->getShape().setFillColor(Color(255, 0, 0));
 
     // Add EnemyAIComponent
+	auto e = enemy->addComponent<EnemyAIComponent>();
 
     // *********************************
   }
@@ -65,13 +80,15 @@ void Level2Scene::Load() {
   {
     // *********************************
 
-
-
-
-
-
-
-
+	  auto walls = ls::findTiles(ls::WALL);
+	  for (auto w : walls) {
+		  auto pos = ls::getTilePosition(w);
+		  pos += Vector2f(20.f, 20.f); //offset to center
+		  auto e = makeEntity();
+		  e->setPosition(pos);
+		  e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
+	  }
+	  
     // *********************************
   }
 
