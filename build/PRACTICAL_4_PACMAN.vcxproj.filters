@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\Ghost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\pacman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\system_renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\Ghost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\pacman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\practical_4\system_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2028B166-2F4A-3C5C-930E-D1EC67B4BC9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FE192B89-AC41-3942-B64C-B35B09218979}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/Rafał/Desktop/C-_Shoot2Kill_GameX/lib/sfml/src/SFML/Window/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/FindPackageMessage.cmake
