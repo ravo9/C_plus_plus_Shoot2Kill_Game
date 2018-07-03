@@ -1,5 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1823,5): warning : The referenced project 'C:\Users\Rafał\Desktop\build\ZERO_CHECK.vcxproj' does not exist.
-  Building Custom Rule C:/Users/Rafał/Desktop/C-_Shoot2Kill_GameX/lib/sfml/src/SFML/System/CMakeLists.txt
-  CMake is re-running because C:/Users/Rafa┼é/Desktop/build/lib/sfml/src/SFML/System/CMakeFiles/generate.stamp dependency file is missing.
-CUSTOMBUILD : CMake error : The source directory "C:/Users/Rafa┼é/Desktop/C-_Shoot2Kill_GameX" does not exist.
-  Specify --help for usage, or press the help button on the CMake GUI.
