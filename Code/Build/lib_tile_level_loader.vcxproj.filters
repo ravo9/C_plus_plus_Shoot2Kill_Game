@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\engine\lib_tile_level_loader\LevelSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\engine\lib_tile_level_loader\LevelSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\engine\lib_maths\maths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\G1.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bazookaBullet.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bonus_ar15.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bonus_bazooka.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bonus_colt.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bossSprite.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\btnCustom.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\btnLeftArrow.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\btnLeftCtrl.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\btnRightArrow.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\btnUpArrow.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bullet.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bulletGood01.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\bullet_small.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\camilla.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\cannon.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\cannonBullet.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\dialog0.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\dialog1.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\dialog2.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\enemySpritesheetColts.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\gogh.jpg">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lisa.jpg">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lvl01_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lvl02_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lvl03_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lvl04_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lvl05_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\lvl_final_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\menu_about_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\menu_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\menu_options_background.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\pointer.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\simonSpritesheetAr15.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\simonSpritesheetBazooka.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\simonSpritesheetColts.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\textBackground_01_01.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\textBackground_01_02.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\textBackground_01_03.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\textBackground_02_01.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\textBackground_02_02.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\img\textBackground_02_03.png">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\fonts\RobotoMono-Regular.ttf">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_1 — kopia.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_1.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_2.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_3.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_4.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_5.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\level_final.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\maze.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\maze_2.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\pacman.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\sound\Platformer2.mp3">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\sound\bazooka+2.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Rafał\Desktop\C-_Shoot2Kill_GameX\res\sound\coltSound.wav">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2028B166-2F4A-3C5C-930E-D1EC67B4BC9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FE192B89-AC41-3942-B64C-B35B09218979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{2FAA8C76-B1C2-3C21-9FB4-3DAE5E12FF09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
